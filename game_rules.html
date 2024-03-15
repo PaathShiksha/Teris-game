@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris Game Rules</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      animation: fadeIn 0.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .game-image {
+      flex: 0 0 45%;
+      max-width: 45%;
+   
+      margin-right: 20px;
+    }
+
+    .game-image img {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+
+    .game-rules {
+      flex: 1;
+    }
+
+    h1, h2 {
+      color: #333;
+      transition: color 0.3s ease-in-out;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: blue;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
+
+    a:hover {
+      color: #3366cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-image">
+    <img src="src/tetris_game_image.jpg"  alt="Tetris Game Image">
+  </div>
+
+  <div class="game-rules">
+    <h1>Tetris Game Rules</h1>
+
+    <h2>Objective</h2>
+    <p>The objective of Tetris is to manipulate falling tetrominoes (shapes made up of four square blocks) to create complete horizontal lines without any gaps. When a line is complete, it disappears, and the player earns points.</p>
+
+    <h2>Controls</h2>
+    <ul>
+      <li><strong>Left Arrow:</strong> Move the tetromino left</li>
+      <li><strong>Right Arrow:</strong> Move the tetromino right</li>
+      <li><strong>Up Arrow:</strong> Rotate the tetromino</li>
+      <li><strong>Down Arrow:</strong> Accelerate the tetromino's descent</li>
+    </ul>
+
+    <h2>Scoring</h2>
+    <p>The player earns points for each line cleared. The number of points depends on the number of lines cleared simultaneously.</p>
+    <ul>
+      <li><strong>1 Line:</strong> 10 points</li>
+      <li><strong>5 Lines (Tetris):</strong> 50 points, move to next level</li>
+    </ul>
+
+    <h2>Leveling Up</h2>
+    <p>As the player scores points, they advance to higher levels. Each level increases the tetromino's falling speed, making the game more challenging.</p>
+
+    <h2>Game Over</h2>
+    <p>The game ends when the stack of tetrominoes reaches the top of the playfield, and there's no room to place new tetrominoes.</p>
+
+    <p>Enjoy playing Tetris!</p>
+
+    <p>Go back to <a href="game.html">Tetris Game</a>.</p>
+  </div>
+</body>
+</html>

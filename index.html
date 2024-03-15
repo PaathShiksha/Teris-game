@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: url("src/background-image.png") no-repeat center center;
+            background-size: cover;
+            text-align: center;
+        }
+
+        h1 {
+            box-shadow: 0 0 40px tomato;
+            color: white;
+            margin-top: 350px;
+            font-size: 2.5em;
+            animation: fadeIn 4s ease-out; /* Fade in animation */
+        }
+
+        p {
+            color: tomato;
+            font-size: 30px;
+            margin-bottom: 20px;
+            animation: slideInLeft 4s ease-out; /* Slide in from left animation */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            transform: scale(0.8);
+            transition: transform 0.3s ease; /* Smooth scale transition */
+        }
+
+        li:hover {
+            transform: scale(1);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            border: 2px solid teal;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            font-size: 1.5em;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transition */
+             box-shadow: 0 0 20px tomato;
+        }
+
+        a:hover {
+            background-color: teal;
+            color: #fff;
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Tetris Game</h1>
+    <p>Choose an option below:</p>
+    <ul>
+        <li><a href="game.html">Start Game</a></li>
+        <li><a href="game_rules.html">Game Rules</a></li>
+    </ul>
+</body>
+</html>
